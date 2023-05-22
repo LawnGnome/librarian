@@ -1,0 +1,18 @@
+[package]
+name = "vault"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0.193", features = ["derive"] }
+thiserror = "1.0.50"
+toml = "0.8.8"
+tracing = "0.1.40"
+walkdir = "2.4.0"
+
+[dev-dependencies]
+anyhow = "1.0.75"
+googletest = { version = "0.10.0", features = ["anyhow"] }
+tempfile = "3.8.1"
